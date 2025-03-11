@@ -1,0 +1,20 @@
+3개 이미지 바꾸기
+출력 원하는 글자, ???, 내 전신(?)
+배경은 안바꿔도 ㄱㅊ
+강조 색 바꾸기
+커스터마이징 가능
+레쥬메 탬플릿 활용(?)
+
+organization>vss(visualize)
+class>style
+
+git remote ~~~
+markdown
+index.html
+github setting>page>main/root
+action>history of depoying it
+
+repository>about 설정>use your ~~~check
+
+컨트롤 쉬프트 p > live server
+크롬에서 보고 싶으면 링크 복붓하면 됨

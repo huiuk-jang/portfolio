@@ -1,0 +1,240 @@
+<!-- https://youtu.be/_xkSvufmjEs?si=mh-MXT2ZdUasYAYn&t=3416 -->
+<!-- adobe.ly/2GAgF93 -->
+<!-- https://scrimba.com/build-and-deploy-your-portfolio-c012 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../img/face.jpg">
+
+    <!-- Help auto scale for desktop & mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT Huiuk Jang Website</title>
+
+    <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="external/normalize.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- alt text can be blank since the logo is purely decorative and putting something like logo isn't actually helpful -->
+            <img src="img/cout.jpg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="#home" class="nav__link">Home</a> </li>
+                <li class="nav__item"> <a href="#skills" class="nav__link">Skills</a> </li>
+                <li class="nav__item"> <a href="#about" class="nav__link">About Me</a> </li>
+                <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a> </li>
+                <li class="nav__item"> <a href="#resume" class="nav__link">Resume</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section class="intro" id="#home">
+        <!-- TODO put in a mouse based interactive shader visualization page-->
+        <!-- <div class="intro-bg">
+            <iframe src="webgl/for_fun.html"></iframe>
+        </div> -->
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Huiuk Jang</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"> Game Programmer</p>
+        <img src="img/face.jpg" alt="a picture of Huiuk Jang smiling" class="intro__img" />
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="skills">
+        <h2 class="section__title section__title--services">SKLILZ</h2>
+        <div class="services">
+            <div class="service">
+                <h3>C/C++</h3>
+                <p> Developed most projects using C and C++.
+                    Solved numerous coding problems in C.
+                    I had debug and optimized codes across complex projects.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>OpenGl</h3>
+                <p> Developed an engine using OpenGL for a project.
+                    Model loading, shader processing, buffer management, and other graphics-related techniques are within my skill set.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Problem Solving</h3>
+                <p> By solving numerous coding problems online and debugging project errors, I've developed strong problem-solving skills.
+                </p>
+            </div>
+        </div>
+
+        <a href="#projects" class="btn">Projects</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+            Student Game Programmer<!-- Huiuk Jang-->
+        </p>
+
+        <div class="about-me__body">
+            <p>
+                DigiPen student. Open to sharing code and receiving feedback.
+            </p>
+            <p>
+                Advanced beginner in C, C++, OpenGl and General Game Programming.
+                Currently pursuing a Bachelor of Science (BS) focused in Real Time Interactive Simulation from Digipen Institute of Technology.
+            </p>
+        </div>
+        <img src="img/tall.jpg" alt="picture of Huiuk Jang" class="about-me__img" />
+    </section>
+
+    <!-- My Portfolio -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">
+            A selection of my range of projects
+        </p>
+        <div class="portfolio">
+            <a href="portfolio/01_hello.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/01_hello.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/02_meshes.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/02_meshes.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/03_fog.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/03_fog.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/04_toon.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/04_toon.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/05_shadow.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/05_shadow.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/06_value.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/06_value.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/07_gradient.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/07_gradient.jpg" alt="" class="portfolio__img" />
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="my-resume" id="resume">
+        <h2 class="section__title section__title--resume">Resume</h2>
+        <a target="_blank" href="docs/Resume.pdf"><i class="far fa-file-pdf"></i> PDF</a>
+
+        <div class="resume-section">
+            <h3>Projects</h3>
+            <div class="resume-item">
+                <p>
+                    <b>Programmer&Engine Developer, ABRAXAS</b></br>
+                    Sep 2024 - Jun 2025</br>
+                    <em>Daegu, Korea</em></br>
+                    <span>&#183;</span> 2D Platformer Roguelike Game that collaborated with a team of 2. </br>
+                    <span>&#183;</span> Designed and implemented graphic rendering, audio processing, data input systems, camera control, game windows, and inputs using OpenGL for a custom game engine.</br>
+                    <span>&#183;</span> Developed a character selection screen interface, game numerical adjustment objects, and icons.</br>
+                    <span>&#183;</span> Debugged and Resolved specific object collision issues—prevented all other objects from passing through this object.</br>
+
+                </p>
+                <p>
+                    <b>Programmer, Shadow Dimension</b></br>
+                    Mar 2024 - Jun 2024</br>
+                    <em>Daegu, Korea</em></br>
+                    <span>&#183;</span> 2D Platformer Puzzle Game that collaborated with a team of 2. </br>
+                    <span>&#183;</span> Contributed to the creation of a modular game engine and core player-object interaction system.</br>
+                    <span>&#183;</span> Developed a 3D interaction detection and resolution system, along with a visualization system for top/side view properties in 3D Modulus.</br>
+                    <span>&#183;</span> Created a dynamic data update system that allows real-time changes using external files.</br>
+                </p>
+                <p>
+                    <b>Programmer, Mine Mine</b></br>
+                    Sep 2023 - Dec 2023</br>
+                    <em>Daegu, Korea</em></br>
+                    <span>&#183;</span> 2D Platformer Arcade Game that collaborated with a team of 2.</br>
+                    <span>&#183;</span> Designed and implemented player movement and object interaction systems.</br>
+                    <span>&#183;</span> Developed an object image conversion function based on specific conditions.</br>
+                    <span>&#183;</span> Built a 2D collision detection and resolution system.</br>
+                    <span>&#183;</span> Created algorithms for random tile-based map generation and object placement.</br>
+                    <span>&#183;</span> Implemented dynamic light source diffusion and field of view limitation systems.</br>
+                    <span>&#183;</span> Developed a developer mode with features such as speed adjustment, time control, and immediate interaction.</br>
+
+
+                </p>
+            </div>
+
+            <h3>Leadership Experience</h3>
+            <div class="resume-item">
+                <p>
+                    <b>Student council secretary, DigiPen Institute of Technology</b></br>
+                    Mar 2023 - Jun 2025</br>
+                    <em>Daegu, Korea</em></br>
+                    <span>&#183;</span> Responsible for recording and organizing meeting minutes, providing input during discussions, reminding team members of action items, and contributing to project progress management in events like retreats and game jams.
+                </p>
+            </div>
+
+            <h3>Education</h3>
+            <div class="resume-item">
+                <p>
+                    <b>Bachelor of Science in Computer Science in Real-Time Interactive Simulation</b></br>
+                    2023-2025</br>
+                    <em>Daegu, Korea </em></br>
+                    <!-- & Redmond, WA, USA -->
+                    Bachelor of Science in Computer Science</br>
+                    Courses: Advanced C/C++, Data Structures, Computer Graphics, Calculus, Linear Algebra
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /Resume Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!--<a href="mailto:huiuk.jang@digipen.edu" class="footer__link">huiuk.jang@digipen.edu</a>-->
+        <a href="mailto:wkdgmldnr011@gmail.com@digipen.edu" class="footer__link">wkdgmldnr011@gmail.com</a> 
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com/in/huiuk-jang-388b9b2b4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/huiuk-jang">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/chatisellen">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <!-- Want to list more? search : https://fontawesome.com/v5/search?ic=brands -->
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
