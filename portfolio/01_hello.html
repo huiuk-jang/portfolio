@@ -69,22 +69,27 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>Made a Quad that contains animations of vertex and fragment shader.
+            It is to show the knowing about using OpenGL of makeing index and vertex buffer, vertex array, and texture. 
+            It also shows the ability of using vertex and fragment shader.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>IndexBuffer-create indeces buffer, make the destructor of it, make use fuction to bind or unbind the index buffer.<p></p>
+            </li><li>Texture-Made LoadFromMemory to load from the memory to rander the image and maps it. Made UseForSlot to activate texture unit to the location where I want, made SetFiltering for fintltering. Made SetWrapping to wrap related to the S and T wrap. Lastly, made delete texture.<p></p>
+            </li><li>VertexArray-With constructor, I handled the vertex array and with the destructor, I deleted it. With use fuction, I can bind or unbind the vertex array. In SetIndexBuffer, I can get the index buffer and move the index to the index buffer. And in DrawIndexed and DrawVertices, I can draw Elements of index or arrays.(for each)<p></p>
+            </li><li>VertexBuffer-I set the buffer data to the buffer handle in the constructor and free it in the destructor. With use fuction, I can bind or unbind the vertex buffer. With BufferSubData in send_buffer_data_to_gpu, I can send the data.<p></p>
+            </li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>At first, I was confused about how to use OpenGL functions like GL_ARY_BUFFER, GL_Element_ARY_BUFFER, etc.
+            So I checked docx.gl , found out the differences, heard more explanations about those functions, and finally made this project. 
+            I learned the lesson that it's very important to read documents correctly and how to use RenderDoc to check programs created by OpenGL.</p>
     </div>
 
     <div class="portfolio-item-individual">
         <h2>Demo</h2>
-        <!-- TODO demo the webgl version of the project -->
         <iframe id="demo" src="../webgl/D01HelloQuad/graphics_fun.html"></iframe>
     </div>
 
