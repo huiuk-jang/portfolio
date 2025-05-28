@@ -69,17 +69,19 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>Make a objects with different distances and shows the fog related to the distences.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>I changed the distance to the objects using the vertex shader and make the Fog to the objects with fragment shader.</li>
+            <li>Made different three fogs with changing fragent shaders. linear fog, exponential fog, and fog realted to the fragcoord z.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>It was hard to find why those fragments and vertex shaders doesn't work because the errors of shaders wasen't shown and I didn't know the way to find the bug.
+            So I just check each shaders and fix them one by one. It was a good chance to think bugs that can be caused and fix them.
+            Because I had less knowledge about fragment and vertex shader's related transformation spaces, sending object position from vertex shader to fragment shader was different then my expected.
+            Now I know that fragment shader is in view sapce (because the camera's location is fixed and I only need the length between the object and the camera in the shader) and the vertex shader is in clip space(In this project).</p>
     </div>
 
     <div class="portfolio-item-individual">
