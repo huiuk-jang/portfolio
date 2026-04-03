@@ -1,0 +1,161 @@
+<!-- https://youtu.be/_xkSvufmjEs?si=mh-MXT2ZdUasYAYn&t=3416 -->
+<!-- adobe.ly/2GAgF93 -->
+<!-- https://scrimba.com/build-and-deploy-your-portfolio-c012 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../img/face.jpg">
+    <!-- Help auto scale for desktop & mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huiuk Jang Website</title>
+
+    <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="../external/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- alt text can be blank since the logo is purely decorative and putting something like logo isn't actually helpful -->
+            <img src="../img/cout.jpg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#about" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#resume" class="nav__link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Project <strong>Gradient Noise</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Program Game & Engine</p>
+        <img src="../img/portfolio_thumbnails/002_Shadow.jpg" alt="a picture of this portfolio item" class="intro__img">
+    </section>
+
+    
+    <div class="portfolio-item-individual">
+        <h2>Project Overview</h2>
+        <p>Platformer 3D puzzle game with two 2D view.</p>
+
+        <h2>Tasks Completed</h2>
+        <ul>
+            <li>I've completed creating the 3D collision system for the player and objects. </li>
+            <li>I made two different 2D camera views and made most of the player movement logic. </li>
+            <li>Additionally, I've implemented a feature that spawns objects at specific coordinate data inputs.</li>
+        </ul>
+
+        <h2>Reflection</h2>
+        <p>When faced with the variable of planning delays during a project, I seized the opportunity to enhance system flexibility. </p>
+        <p>By proactively building a data-driven puzzle system, I prepared for the frequent revisions that might otherwise have been required once the planning phase was finalized.</p>
+        <p>In particular-even after completing my own assigned tasks-I proposed and developed a communication tool that allowed for the immediate incorporation of design intentions, thereby helping to elevate the overall quality of the team's deliverables. </p>
+        <p>This experience served as a catalyst for me to deeply reflect on the specific technical support and communication strategies essential for seamless collaboration as a developer, and to translate those insights into practical, actionable solutions.</p>
+
+        <h2>Download</h2>
+        <div class="button-container">
+            <a href="../project/002Shadow/ShadowDimension.zip" download="ShadowDimension.zip">
+                <button type="button" class="download-btn">Download ShadowDimension</button>
+            </a>
+        </div>
+
+        <style>
+            .button-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .download-btn {
+                background-color: #4CAF50; 
+                color: white;            
+                padding: 12px 24px;   
+                border: none;               
+                border-radius: 8px;       
+                cursor: pointer;            
+                font-size: 18px;          
+                font-weight: bold;        
+                transition: 0.3s;      
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            }
+
+            .download-btn:hover {
+                background-color: #45a049; 
+                transform: translateY(-2px); 
+                box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+            }
+            
+            .download-btn:active {
+                transform: translateY(0);
+            }
+        </style>
+    </div>
+
+    <div class="portfolio-item-individual">
+        <h2>Demo</h2>
+        <iframe id="demo" src="../project/002Shadow/ShadowDimension.mp4" tabindex="-1"></iframe>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!--<a href="mailto:huiuk.jang@digipen.edu" class="footer__link">huiuk.jang@digipen.edu</a>-->
+        <a href="mailto:wkdgmldnr011@gmail.com" class="footer__link">wkdgmldnr011@gmail.com</a> 
+        <a href="mailto:huiuk.jang@digipen.edu" class="footer__link">huiuk.jang@digipen.edu</a> 
+        
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com/in/huiuk-jang-388b9b2b4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/huiuk-jang">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/chatisellen">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <!-- Want to list more? search : https://fontawesome.com/v5/search?ic=brands -->
+        </ul>
+    </footer>
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
