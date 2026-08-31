@@ -40,9 +40,9 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"> <a href="#home" class="nav__link">Home</a> </li>
-                <li class="nav__item"> <a href="#skills" class="nav__link">Skills</a> </li>
-                <li class="nav__item"> <a href="#about" class="nav__link">About Me</a> </li>
                 <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a> </li>
+                <li class="nav__item"> <a href="#specialty" class="nav__link">Specialty</a> </li>
+                <li class="nav__item"> <a href="#about" class="nav__link">About Me</a> </li>
                 <li class="nav__item"> <a href="#resume" class="nav__link">Resume</a> </li>
             </ul>
         </nav>
@@ -58,33 +58,105 @@
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Huiuk Jang</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro"> Game Programmer</p>
+        <p class="section__subtitle section__subtitle--intro"> Game & Engine Programmer</p>
         <img src="img/face.jpg" alt="a picture of Huiuk Jang smiling" class="intro__img" />
     </section>
 
+    <!-- My Portfolio -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">
+            A selection of my range of projects
+        </p>
+        <div class="btn-group">
+            <button class="btn" onclick="changeContent('game')">Game Projects</button>
+            <button class="btn" onclick="changeContent('workexperiences')">Work Experiences</button>
+            <button class="btn" onclick="changeContent('graphics')">Graphics</button>
+        </div>
+        <br>
+        <div class="portfolio">
+            <a href="portfolio/004_onthewing.html" class="portfolio__item">
+                <div class="image-container">
+                    <img src="img/portfolio_thumbnails/004_onthewing.jpg" alt="" class="portfolio__img" />
+                    <span class="image-label label-used">Unreal</span>
+                </div>
+            </a>
+            <a href="portfolio/001_MineMine.html" class="portfolio__item">
+                <div class="image-container">
+                    <img src="img/portfolio_thumbnails/001_MineMine.jpg" alt="" class="portfolio__img" />
+                    <span class="image-label label-used">Raylib & C++</span>
+                </div>
+                
+            </a>
+            <a href="portfolio/003_abraxas.html" class="portfolio__item">
+                <div class="image-container">
+                    <img src="img/portfolio_thumbnails/003_abraxas.jpg" alt="" class="portfolio__img" />
+                    <span class="image-label label-used">OpenGL & C++</span>
+                </div>
+                
+            </a>            
+            <a href="portfolio/002_Shadow.html" class="portfolio__item">
+                <div class="image-container">
+                    <img src="img/portfolio_thumbnails/002_Shadow.jpg" alt="" class="portfolio__img" />
+                    <span class="image-label label-used">Raylib & C++</span>
+                </div>
+                
+            </a>
+
+
+        <!--
+            
+            <a href="portfolio/01_hello.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/01_hello.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/02_meshes.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/02_meshes.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/03_fog.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/03_fog.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/04_toon.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/04_toon.jpg" alt="" class="portfolio__img" />
+            </a>
+            -->
+            <!--//vitalize again
+            <a href="portfolio/05_shadow.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/05_shadow.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/06_value.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/06_value.jpg" alt="" class="portfolio__img" />
+            </a>
+            <a href="portfolio/07_gradient.html" class="portfolio__item">
+                <img src="img/portfolio_thumbnails/07_gradient.jpg" alt="" class="portfolio__img" />
+            </a>
+            -->
+            
+        </div>
+    </section>
+
     <!-- My Services -->
-    <section class="my-services" id="skills">
-        <h2 class="section__title section__title--services">SKILLS</h2>
+    <section class="my-services" id="specialty">
+        <h2 class="section__title section__title--services">SPECIALTY</h2>
         <div class="services">
             <div class="service">
                 <h3>C/C++</h3>
-                <p> Developed most projects using C and C++.
-                    Solved numerous coding problems in C and problems in Calculus and Linear Algebra.
+                <p> Developed most projects using <span class="services-color-text">C</span> and <span class="services-color-text">C++</span>.
+                    <span class="services-color-text">Solved</span> Numerous <span class="services-color-text"></span>Coding Problems</span> in <span class="services-color-text">C</span> and problems in <span class="services-color-text">Calculus</span> and <span class="services-color-text">Linear Algebra</span>.
                     I had debug and optimized codes across complex projects.
                 </p>
             </div>
 
             <div class="service">
                 <h3>OpenGl</h3>
-                <p> Developed an engine using OpenGL for a project.
-                    Model loading, shader processing, buffer management, and other graphics-related techniques are within my skill set.
+                <p> Developed an engine using <span class="services-color-text">OpenGL</span> for a project.
+                    <span class="services-color-text">Model Loading</span>, <span class="services-color-text">Shader Processing</span>, <span class="services-color-text">Buffer Management</span>, and other graphics-related techniques are within my skill set.
                 </p>
             </div>
 
             <div class="service">
                 <h3>Unreal & Unity</h3>
-                <p>I possess specialized technical expertise in system design utilizing Unreal Engine Blueprints, Niagara particle implementation, custom shaders, and UMG-based UI development.
-                    Furthermore, drawing upon my experience with basic physics projects-such as a 'Pong' and 'Sumo' implementation-using the Unity Engine, I possess a solid understanding of how to align visual elements and game logic with the specific characteristics of each engine.
+                <p>I possess specialized technical expertise in system design utilizing <span class="services-color-text">Unreal Engine Blueprints</span>, <span class="services-color-text">Niagara Particle</span> Implementation, <span class="services-color-text">Custom Shaders</span>, and <span class="services-color-text">UMG-based UI</span> development.
+                    Furthermore, drawing upon my experience with basic physics projects - such as a 'Pong' and 'Sumo' implementation - using <span class="services-color-text">Unity</span> Engine, I possess a solid understanding of how to align visual elements and game logic with the specific characteristics of each engine.
                 </p>
             </div>
         </div>
@@ -96,7 +168,7 @@
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">Who I am</h2>
         <p class="section__subtitle section__subtitle--about">
-            Student Game Programmer<!-- Huiuk Jang-->
+            Game Programmer with the interest in Graphics<!-- Huiuk Jang-->
         </p>
 
         <div class="about-me__body">
@@ -111,55 +183,12 @@
         <img src="img/tall.jpg" alt="picture of Huiuk Jang" class="about-me__img" />
     </section>
 
-    <!-- My Portfolio -->
-    <section class="my-projects" id="projects">
-        <h2 class="section__title section__title--projects">My Projects</h2>
-        <p class="section__subtitle section__subtitle--projects">
-            A selection of my range of projects
-        </p>
-        <div class="portfolio">
-            <a href="portfolio/01_hello.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/01_hello.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/02_meshes.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/02_meshes.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/03_fog.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/03_fog.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/04_toon.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/04_toon.jpg" alt="" class="portfolio__img" />
-            </a>
-            <!--//vitalize again
-            <a href="portfolio/05_shadow.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/05_shadow.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/06_value.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/06_value.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/07_gradient.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/07_gradient.jpg" alt="" class="portfolio__img" />
-            </a>
-            -->
-            <a href="portfolio/001_MineMine.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/001_MineMine.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/002_Shadow.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/002_Shadow.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/003_abraxas.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/003_abraxas.jpg" alt="" class="portfolio__img" />
-            </a>
-            <a href="portfolio/004_onthewing.html" class="portfolio__item">
-                <img src="img/portfolio_thumbnails/004_onthewing.jpg" alt="" class="portfolio__img" />
-            </a>
-        </div>
-    </section>
+    
 
     <!-- Resume Section -->
     <section class="my-resume" id="resume">
         <h2 class="section__title section__title--resume">Resume</h2>
-        <a target="_blank" href="docs/Resume 3.31ver.pdf"><i class="far fa-file-pdf"></i> PDF</a>
+        <a target="_blank" href="docs/Resume.pdf"><i class="far fa-file-pdf"></i> PDF</a>
 
         <div class="resume-section">
             <h3>Work Experience</h3>

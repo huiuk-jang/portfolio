@@ -17,6 +17,8 @@
   --clr-light: #000000b3;
   --clr-dark: #ffffff;
   --clr-accent: hsla(208, 69%, 55%, 0.805);
+  --clr-green: hsla(146, 69%, 55%, 0.805);
+  --clr-red: hsla(0, 69%, 55%, 0.805);
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -71,8 +73,9 @@ strong {
 }
 
 .btn {
+  border: none;
   display: inline-block;
-  padding: 0.5em 2.5em;
+  padding: 0.7em 2.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
@@ -84,8 +87,15 @@ strong {
   transition: transform 200ms ease-in-out;
 }
 
+
 .btn:hover {
   transform: scale(1.1);
+}
+
+.btn-group {
+  justify-content: center;
+    display: flex;
+    gap: 15px;
 }
 
 /* Typography */
@@ -313,16 +323,21 @@ header {
 /* my services section */
 
 .my-services {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-light);
   background-image: url(../img/skills-bg.jpg);
   background-size: cover;
   background-blend-mode: overlay;
-  color: var(--clr-light);
+  color: var(--clr-dark);
   text-align: center;
 }
 
+.services-color-text {
+    font-weight: bold;
+    color: var(--clr-green)
+}
+
 .section__title--services {
-  color: var(--clr-accent);
+  color: var(--clr-dark);
   position: relative;
 }
 
@@ -332,7 +347,7 @@ header {
   width: 2em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background: var(--clr-dark);
   opacity: 0.25;
 }
 
@@ -411,7 +426,8 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -436,6 +452,30 @@ header {
   opacity: 0.75;
 }
 
+.image-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    padding: 4px 8px;
+    font-size: 12px; 
+    font-weight: bold; 
+    color: var(--clr-dark);
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.label-used {
+    background-color: var(--clr-red)
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -445,12 +485,14 @@ header {
 }
 
 .my-resume {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.resume-section h3 {
+.resume-section h3 {  
   color: var(--clr-dark);
   text-align: center;
 }
